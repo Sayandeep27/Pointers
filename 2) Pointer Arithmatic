@@ -1,0 +1,26 @@
+
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+  
+    int a=10;
+    
+    int *p;
+    
+    p=&a;
+    
+    
+    cout<<p<<endl;   // if p is 2002
+    cout<<p+1<<endl;   // then p+1 will be 2002+4=2006 (as int)
+    
+    
+    cout<<*p<<endl;   // p=5
+    cout<<*(p+1)<<endl;  // it will give some random garbage value as we do not have any int in that adress
+  
+
+    return 0;
+}
