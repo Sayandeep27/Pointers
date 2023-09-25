@@ -1,0 +1,33 @@
+
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int a=1025;
+    
+    int *p;
+    
+    p=&a;
+    
+    
+    cout<<"size of int = "<<sizeof(int)<<endl;
+    cout<<"value = "<<*p<<endl;
+    cout<<"adress = "<<p<<endl;
+    
+    
+    void *p0;
+    
+    p0=p;
+    
+    
+    cout<<"adress of p0 = "<<p0<<endl;   // adress will be same as p
+    
+    // cout<<*p0  -   will fetch error because we can not derefence void pointer
+    
+    // cout<<p0+1 - arithmatic operation is aslo not valid in case of void pointer
+  
+    return 0;
+}
