@@ -1,0 +1,43 @@
+
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+  
+    int a=10;
+    
+    int *p;
+    
+    p=&a;
+    
+    
+    
+    cout<<a<<endl;
+    cout<<&a<<endl;
+    cout<<p<<endl;
+    cout<<*p<<endl;  // dereferencing
+    
+    
+    cout<<"-----------------------------------"<<endl;
+    
+    *p=5;   
+    
+    
+    cout<<a<<endl;
+    cout<<&a<<endl;
+    cout<<p<<endl;
+    cout<<*p<<endl;  // dereferencing
+    
+    
+    
+    
+    // p=adress, *p=value at adress
+    
+  
+  
+
+    return 0;
+}
