@@ -1,0 +1,33 @@
+
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int a=1025;
+    
+    int *p;
+    
+    p=&a;
+    
+    cout<<"size of int"<<sizeof(int)<<endl;
+    cout<<"adress = "<<p<<endl;
+    cout<<"value = "<<*p<<endl;
+     
+  
+    char *p0;
+    
+   // p0=p;   - this will fetch error as both have different data types
+   
+   p0=(char*)p;  // typecasting
+   
+   cout<<"size of char"<<sizeof(char)<<endl;
+   cout<<"adress = "<<p0<<endl;
+   cout<<"value = "<<*p0<<endl;
+   
+  
+  
+    return 0;
+}
